@@ -5,7 +5,7 @@ const OrderService = require("../services/OrderService");
 const OrderServiceInstance = new OrderService();
 
 module.exports = (app) => {
-  app.use("/orders", router);
+  app.use("/api/orders", router);
 
   router.get("/", async (req, res, next) => {
     try {

@@ -5,7 +5,7 @@ const CartService = require("../services/CartService");
 const CartServiceInstance = new CartService();
 
 module.exports = (app, passport) => {
-  app.use("/carts", router);
+  app.use("/api/carts", router);
 
   router.get("/mine", async (req, res, next) => {
     try {
