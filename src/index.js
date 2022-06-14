@@ -7,13 +7,13 @@ import App from "./components/App";
 import rootReducer from "./store/rootReducer";
 import "./index.css";
 
-//const store = '';
+const store = '';
 
 ReactDOM.render(
   <StrictMode>
-    
+    {/* add provider with store*/}
       <App />
-    
+
   </StrictMode>,
   document.getElementById("root")
 );
